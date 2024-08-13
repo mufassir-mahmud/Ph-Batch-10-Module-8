@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            max-width: 1200px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        .img-container{
+            display: flex;
+        }
+        .box{
+            width: 50%;
+        }
+        .box img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            .img-container{
+                flex-direction: column-reverse;
+            }
+            .box{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Website</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium mollitia, neque voluptas eligendi magnam dolor corporis repellendus quae eveniet. Quas numquam aliquid, nam obcaecati unde cum incidunt ipsum iusto.</p>
+    <div class="img-container">
+        <div class="box"><img src="tiger.jfif" alt=""></div>
+        <div class="box"><img src="healthy.jpg" alt=""></div>
+    </div>
+</body>
+</html>
